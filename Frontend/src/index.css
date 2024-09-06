@@ -4,6 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family: "Poppins"      
+body {
+    font-family: 'Poppins', sans-serif; /* Added fallback font */
 }
