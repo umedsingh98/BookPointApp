@@ -2,9 +2,14 @@ import express from 'express';
 import dotenv from 'dotenv';
 import connectToMongo from './db.js';
 import cors from 'cors';
-import path from 'path'; // Import path module
+import path from 'path';
+import { fileURLToPath } from 'url'; // For ES modules
 import bookRoute from './routes/book_route.js';
 import userRoute from './routes/user_route.js';
+
+// Resolve __dirname for ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 
