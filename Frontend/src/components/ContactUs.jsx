@@ -19,7 +19,7 @@ function ContactUs() {
     <>
     <Navbar />
     <div className="flex justify-center items-center h-full md:h-screen md:mt-6 mt-28" >
-      <section className="p-12 rounded shadow w-full md:w-1/2 mx-10 dark:border dark:border-slate-700">
+      <section className="p-12 rounded shadow w-full md:w-2/3 mx-10 dark:border dark:border-slate-700">
       <div className="flex justify-between w-full mb-4">
             <h1 className="text-xl font-medium md:text-3xl dark:text-white">
               Contact Us
