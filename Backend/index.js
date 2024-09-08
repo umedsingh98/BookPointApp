@@ -1,4 +1,4 @@
-import http from 'http';
+
 import express from "express";
 import dotenv from "dotenv";
 import connectToMongo from "./db.js";
@@ -6,7 +6,7 @@ import cors from "cors";
 import bookRoute from "./routes/book_route.js";
 import userRoute from "./routes/user_route.js";
 const app = express();
-http.Server();
+
 dotenv.config();
 const PORT = process.env.PORT || 4001 ;
 connectToMongo();
