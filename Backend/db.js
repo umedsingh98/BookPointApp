@@ -1,9 +1,18 @@
-import mongoose, { connect } from "mongoose";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
 
-const connectToMongo = () => {
- const res = mongoose.connect('mongodb+srv://umedsingh2981998:Pmqo5LnvdDYIvnUC@umedsingh.kol9o.mongodb.net/bookpoint?retryWrites=true&w=majority&appName=umedSingh');
-if(res){
-  console.log("Connected To Database Successfully...");
-}
-}
+dotenv.config(); // Load environment variables from .env
+
+const connectToMongo = async () => {
+  try {
+    await mongoose.connect(process.env.MONGO_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log("Connected To Database Successfully...");
+  } catch (error) {
+    console.error("Error connecting to the database:", error);
+  }
+};
+
 export default connectToMongo;
