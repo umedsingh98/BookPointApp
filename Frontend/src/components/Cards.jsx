@@ -7,13 +7,13 @@ function Cards({ items }) {
     <>
       <div className="mt-5 my-4 p-3 ">
         <div className="card bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border">
-          <figure>
+          <figure className="w-4/2 object-fill">
             <img src={items.image} alt="Movie" />
           </figure>
           <div className="card-body w-full">
             <h2 className="card-title">
               {items.name}
-              <div className="badge badge-warning">{items.category}</div>
+              <div className="badge p-2 badge-warning">{items.category}</div>
             </h2>
 
             <div className="d flex">

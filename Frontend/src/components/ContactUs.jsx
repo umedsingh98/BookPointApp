@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useForm } from "react-hook-form";
 import Navbar from "./Navbar.jsx";
+import { toast } from 'react-hot-toast';
 
 function ContactUs() {
 
@@ -11,7 +12,14 @@ function ContactUs() {
         handleSubmit,
         formState: { errors },
       } = useForm()
+
       const onSubmit = (data) => {
+        if(data){
+          toast.success("Thankyou for your response!");
+          setTimeout(() => {
+            window.location.href = "/";  
+          },3000);
+        }
         console.log(data)
       }
     

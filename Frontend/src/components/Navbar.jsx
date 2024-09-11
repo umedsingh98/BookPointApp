@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Logout from "./Logout.jsx";
 import { useAuth } from "../context/AuthProvider.jsx";
-
 function Navbar() {
   const [authUser, setAuthUser] = useAuth();
 
@@ -75,7 +74,7 @@ function Navbar() {
 
   return (
     <div
-      className={`w-full bg-white dark:bg-slate-900 dark:text-white fixed top-0 left-0 right-0 z-50 
+      className={`w-full bg-white shadow-sm dark:bg-slate-900 dark:text-white fixed top-0 left-0 right-0 z-50 
     ${
       sticky
         ? "sticky-navbar shadow-md dark:bg-slate-600 dark:text-white duration-200 transition-all ease-in-out"
@@ -113,13 +112,15 @@ function Navbar() {
                 {navItems}
               </ul>
             </div>
-            <a className="text-2xl font-bold cursor-pointer text-red-700">
+            <a className="text-3xl font-bold cursor-pointer text-red-700">
               BookPoint
             </a>
           </div>
           <div className="navbar-end">
             <div className="navbar-center hidden lg:flex">
-              <ul className="menu menu-horizontal">{navItems}</ul>
+              <ul className="menu text-lg menu-horizontal">
+                {navItems}
+              </ul>
 
               <label className="swap swap-rotate mr-1">
                 {/* this hidden checkbox controls the state */}
@@ -151,7 +152,7 @@ function Navbar() {
               </label>
 
               <div className="hidden md:block px-1">
-                <label className="py-2 px-3 my-1 mr-3 border rounded-md flex items-center gap-2">
+                <label className="py-2 px-3 my-2 mr-4 border rounded-md flex items-center gap-2">
                   <input
                     type="text"
                     className="grow outline-none light:text-slate-900 dark:bg-slate-900 dark:text-white"

@@ -1,16 +1,16 @@
 import React from "react";
-import banner from "../assets/books.png" 
+import banner from "../assets/child.png" 
 function Banner() {
   return (
     <>
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex md:flex-row flex-col">
-        <div className=" w-full md:w-1/2 mt-28 md:mt-28">
-          <div className="space-y-12">
-            <h1 className="text-4xl font-bold">
+        <div className=" w-full md:w-1/2 mt-28 md:mt-32">
+          <div className="space-y-12 ml-2">
+            <h1 className="text-5xl md:text-left sm:text-center font-bold">
               Start learning today with BookPoint.{" "}
-              <span className="text-yellow-500">New Books Every Week.</span>
+              <span className="text-yellow-500">New books every week.</span>
             </h1>
-            <p className="text-xl pr-3">
+            <p className="text-xl md:text-left sm:text-center  pr-3">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500.
@@ -21,9 +21,9 @@ function Banner() {
             <input type="text" className="grow  p-2 dark:bg-slate-900 dark:text-white" placeholder=" Enter your email here..." />
           </label>
           </div>
-         <button className="btn mt-3 px-6 bg-red-700 text-white gap-2 hover:bg-green-600">Signup</button>
+         <button className="btn mt-3 px-6 ml-2 bg-red-700 text-white gap-2 hover:bg-green-600">Signup</button>
         </div>
-        <div className="md:mt-16 md:w-1/2">
+        <div className="md:mt-16 md:w-1/3 w-full p-6 md:ml-32">
          <img src={banner} alt="books"/>
         </div>
       </div>
