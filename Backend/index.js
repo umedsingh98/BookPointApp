@@ -23,7 +23,7 @@ app.use("/book",bookRoute);
 app.use("/user", userRoute);
 
 app.get("/" ,(req,res) => {
-    res.send("Hello Ashu");
+    res.send("Hello Ashu Tanwar");
 });
 
 app.listen(PORT, () => {
