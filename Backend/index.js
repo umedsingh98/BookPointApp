@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 4001 ;
 connectToMongo();
 app.use(cors(
     {
-        origin: [],
+        origin: ["https://book-point-app.vercel.app/"],
         methods: ["POST","GET"],
         credentials: true
     }
