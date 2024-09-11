@@ -9,7 +9,13 @@ const app = express();
 dotenv.config();
 const PORT = process.env.PORT || 4001 ;
 connectToMongo();
-app.use(cors());
+app.use(cors(
+    {
+        origin: [],
+        methods: ["POST","GET"],
+        credentials: true
+    }
+));
 app.use(express.json())
 
 //defining routes
