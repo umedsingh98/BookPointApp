@@ -12,7 +12,7 @@ function FreeBook() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/book/bookportal");
+        const res = await axios.get("https://bookappbackend-99zi.onrender.com/book/bookportal");
         console.log(res.data);
         setBook(res.data.filter((data) => data.category === "Free"));
       } catch (error) {
