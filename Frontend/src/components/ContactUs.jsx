@@ -26,8 +26,8 @@ function ContactUs() {
   return (
     <>
     <Navbar />
-    <div className="flex justify-center items-center h-full md:h-screen md:mt-6 mt-28" >
-      <section className="p-12 rounded shadow w-full md:w-2/3 mx-10 dark:border dark:border-slate-700">
+    <div className="flex justify-center items-center h-screen md:h-screen" >
+      <section className="p-12 px-4 md:mt-6 mt-28 rounded shadow w-full md:w-2/3 mx-10 dark:border dark:border-slate-700">
       <div className="flex justify-between w-full mb-4">
             <h1 className="text-xl font-medium md:text-3xl dark:text-white">
               Contact Us
@@ -38,7 +38,7 @@ function ContactUs() {
               Back
             </a>
           </div>
-        <Form onSubmit={handleSubmit(onSubmit)} className="pl-6">
+        <Form onSubmit={handleSubmit(onSubmit)} className="px-6">
           <Form.Group className="mb-6 mb0" controlId="formBasicName">
             <Form.Label>Name</Form.Label>
             <Form.Control type="text" placeholder="Enter your name" className="placeholder:text-slate-400" {...register("name",{required: true})}/>

@@ -74,14 +74,14 @@ function Navbar() {
 
   return (
     <div
-      className={`w-full bg-white shadow-sm dark:bg-slate-900 dark:text-white fixed top-0 left-0 right-0 z-50 
+      className={`w-full bg-white shadow-sm text-black dark:bg-slate-900 dark:text-white fixed top-0 left-0 right-0 z-50 
     ${
       sticky
         ? "sticky-navbar shadow-md dark:bg-slate-600 dark:text-white duration-200 transition-all ease-in-out"
         : ""
     }`}
     >
-      <div className="w-full px-5 py-1 dark:bg-slate-900 dark:text-white">
+      <div className="w-full px-3 py-1 dark:bg-slate-900 dark:text-white">
         <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">
@@ -92,7 +92,7 @@ function Navbar() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="h-5 w-5 dark:text-white"
                   fill="false"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -112,7 +112,7 @@ function Navbar() {
                 {navItems}
               </ul>
             </div>
-            <a className="text-3xl font-bold cursor-pointer text-red-700">
+            <a className="text-2xl md:text-3xl font-bold cursor-pointer text-red-700">
               BookPoint
             </a>
           </div>
@@ -155,14 +155,14 @@ function Navbar() {
                 <label className="py-2 px-3 my-2 mr-4 border rounded-md flex items-center gap-2">
                   <input
                     type="text"
-                    className="grow outline-none light:text-slate-900 dark:bg-slate-900 dark:text-white"
+                    className="grow outline-none dark:bg-slate-900 dark:text-white"
                     placeholder="Search"
                   />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 16 16"
                     fill="currentColor"
-                    className="h-4 w-4 opacity-80 light:text-slate-900"
+                    className="h-5 w-5 opacity-80 dark:text-white"
                   >
                     <path
                       fillRule="evenodd"
@@ -178,7 +178,7 @@ function Navbar() {
             ) : (
               <a
                 href="/login"
-                className="rounded-md bg-green-700 px-3 py-2 text-white cursor-pointer hover:bg-blue-600"
+                className="rounded-md text-xs md:text-base bg-green-700 px-3 py-2 text-white cursor-pointer hover:bg-blue-600"
               >
                 Login
               </a>
