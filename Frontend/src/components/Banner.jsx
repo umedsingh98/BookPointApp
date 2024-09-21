@@ -3,7 +3,7 @@ import banner from "../assets/child.png"
 function Banner() {
   return (
     <>
-      <div className="w-full container mx-auto md:px-20 px-4 flex md:flex-row flex-col">
+      <div className="w-full container md:px-20 px-4 left-0 right-0 flex md:flex-row flex-col">
         <div className=" w-full md:w-1/2 mt-28 md:mt-32">
           <div className="space-y-8 ml-2">
             <h1 className="md:text-5xl text-4xl font-bold">
