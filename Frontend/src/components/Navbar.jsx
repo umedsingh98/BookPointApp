@@ -92,7 +92,7 @@ function Navbar() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 dark:text-white"
+                  className="h-5 w-5"
                   fill="false"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -118,11 +118,33 @@ function Navbar() {
           </div>
           <div className="navbar-end">
             <div className="navbar-center hidden lg:flex">
+              
+            <div className="hidden md:block px-1">
+                <label className="py-2 px-3 my-2 border rounded-md flex items-center gap-2">
+                  <input
+                    type="text"
+                    className="grow outline-none dark:bg-slate-900 dark:text-white"
+                    placeholder="Search"
+                  />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    className="h-5 w-5 opacity-80"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </label>
+              </div>
               <ul className="menu text-lg menu-horizontal">
                 {navItems}
               </ul>
-
-              <label className="swap swap-rotate mr-1">
+            </div>
+            <label className="swap swap-rotate mr-3">
                 {/* this hidden checkbox controls the state */}
                 <input
                   type="checkbox"
@@ -151,28 +173,6 @@ function Navbar() {
                 </svg>
               </label>
 
-              <div className="hidden md:block px-1">
-                <label className="py-2 px-3 my-2 mr-4 border rounded-md flex items-center gap-2">
-                  <input
-                    type="text"
-                    className="grow outline-none dark:bg-slate-900 dark:text-white"
-                    placeholder="Search"
-                  />
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 16 16"
-                    fill="currentColor"
-                    className="h-5 w-5 opacity-80 dark:text-white"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </label>
-              </div>
-            </div>
             {authUser ? (
               <Logout />
             ) : (

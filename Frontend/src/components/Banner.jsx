@@ -16,9 +16,9 @@ function Banner() {
               ever since the 1500.
             </p>
             
-          <label className="input input-bordered dark:border-slate-400 flex items-center gap-2 mt-6 dark:bg-slate-900 dark:text-white">
+          <label className="input input-bordered dark:border-slate-400 dark:bg-slate-900 dark:text-white flex items-center gap-2 mt-6">
             Email :
-            <input type="text" className="grow p-2 dark:bg-slate-900 dark:text-white" placeholder=" Enter your email here..." />
+            <input type="text" className="grow p-2" placeholder=" Enter your email here..." />
           </label>
           </div>
          <button className="btn mt-3 px-6 ml-2 bg-red-700 text-white gap-2 hover:bg-green-600">Signup</button>
