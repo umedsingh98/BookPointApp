@@ -9,7 +9,7 @@ function AboutUs() {
     <>
       <Navbar />
       {/* Banner Section */}
-      <div className="relative md:mt-0 mt-20">
+      <div className="relative md:mt-0 mt-16">
         <img
           src={bannerImage}
           alt="Bookstore Banner"
