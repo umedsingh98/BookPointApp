@@ -25,7 +25,7 @@ function Login() {
           
           window.location.href = "/explore";
           localStorage.setItem("Users",JSON.stringify(res.data.user))                
-        },2000);
+        },1500);
       }
 
     }).catch((err) => {

@@ -22,12 +22,12 @@ function AboutUs() {
         </div>
       </div>
       {/* About Section */}
-      <div className="flex justify-center items-center mt-4 bg-gray-100 dark:bg-slate-800">
-        <div className="w-full md:w-full lg:w-full p-6 bg-white dark:bg-slate-900 shadow-md rounded-md animate-fadeInUp">
+      <div className="flex justify-center items-center mt-4 md:mx-5 bg-gray-100 dark:bg-slate-800">
+        <div className="w-full md:w-full lg:w-full p-6 dark:bg-slate-900 shadow-md rounded-md animate-fadeInUp">
           <h2 className="text-4xl font-bold mb-6 text-center dark:text-white">
             Welcome to BookPoint
           </h2>
-          <p className="px-3 text-lg text-gray-600 dark:text-slate-300 mb-4 animate-fadeInUp">
+          <p className=" text-lg text-gray-600 dark:text-slate-300 mb-4 animate-fadeInUp">
             Welcome to BookPoint, your number one source for all things books.
             We are dedicated to giving you the very best collection of books,
             with a focus on diversity, affordability, and convenience. Lorem
@@ -41,7 +41,7 @@ function AboutUs() {
           <h3 className="text-2xl font-semibold dark:text-white mb-4 animate-fadeInLeft">
             Our Mission
           </h3>
-          <p className="px-3 text-lg text-gray-600 dark:text-slate-300 mb-4 animate-fadeInLeft">
+          <p className="text-lg text-gray-600 dark:text-slate-300 mb-4 animate-fadeInLeft">
             Our mission is to foster a love for reading in people of all ages by
             providing the latest releases as well as timeless classics. We hope
             you enjoy our collection as much as we enjoy offering it to you.
@@ -52,13 +52,13 @@ function AboutUs() {
             <h3 className="text-2xl font-semibold dark:text-white mb-4 animate-slideInRight">
               Meet the Team
             </h3>
-            <div className="flex flex-col md:flex-row items-center md:space-x-6">
+            <div className="flex flex-col md:flex-row justify-items-center md:space-x-6">
               <img
                 src={teamImage}
                 alt="Our Team"
                 className="w-full md:w-1/2 h-auto rounded-md shadow-md mb-4 md:mb-0 animate-fadeIn"
               />
-              <p className="md:px-5 text-lg text-gray-600 dark:text-slate-300 animate-slideInLeft">
+              <p className="md:px-5 md:mt-4 text-lg text-gray-600 dark:text-slate-300 animate-slideInLeft">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Accusantium a dicta rem, rerum corrupti ea fugiat esse ratione
                 officia molestias perspiciatis ad, et nostrum. Incidunt voluptas

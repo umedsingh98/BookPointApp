@@ -26,14 +26,14 @@ function ContactUs() {
     <>
       <Navbar />
       <div className="flex justify-center items-center min-h-screen">
-        <section className="p-6 md:p-12 mt-28 md:mt-16 mx-3 w-full md:w-2/3 lg:w-1/2 xl:w-1/2 rounded shadow dark:border dark:border-slate-700">
+        <section className="p-6 md:p-12 mt-16 md:mt-16 mx-3 w-full md:w-2/3 lg:w-1/2 xl:w-1/2 rounded shadow dark:border dark:border-slate-700">
           <div className="flex justify-between w-full mb-4">
             <h1 className="text-xl md:text-3xl font-medium dark:text-white">
               Contact Us
             </h1>
             <a
               href="/"
-              className="p-2 text-white bg-slate-500 hover:bg-slate-700 rounded-md"
+              className="p-2 text-white bg-slate-700 hover:bg-slate-500 rounded-md"
             >
               Back
             </a>
@@ -45,7 +45,7 @@ function ContactUs() {
               <Form.Control
                 type="text"
                 placeholder="Enter your name"
-                className="placeholder:text-slate-400"
+                className="placeholder:text-slate-400 dark:bg-slate-800 dark:text-white"
                 {...register("name", { required: true })}
               />
               {errors.name && (
@@ -61,7 +61,7 @@ function ContactUs() {
               <Form.Control
                 type="email"
                 placeholder="Enter your email"
-                className="placeholder:text-slate-400"
+                className="placeholder:text-slate-400 dark:bg-slate-800 dark:text-white"
                 {...register("email", {
                   required: "Email is required",
                   pattern: {
@@ -85,7 +85,7 @@ function ContactUs() {
                 as="textarea"
                 rows={3}
                 placeholder="Type a message..."
-                className="placeholder:text-slate-400"
+                className="placeholder:text-slate-400 dark:bg-slate-800 dark:text-white"
                 {...register("message", { required: true })}
               />
               {errors.message && (
@@ -96,7 +96,7 @@ function ContactUs() {
             </Form.Group>
 
             {/* Submit Button */}
-            <div className="flex justify-center">
+            <div className="flex justify-start">
               <Button
                 variant="primary"
                 type="submit"

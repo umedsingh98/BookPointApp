@@ -14,7 +14,7 @@ function Logout() {
             setTimeout(() => {
                 window.location.href = "/";
                 localStorage.removeItem("Users");    
-            },2000);
+            },1500);
             
             
         } catch (error) {

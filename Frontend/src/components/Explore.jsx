@@ -30,7 +30,7 @@ function Explore() {
             We're delighted to have you{" "}
             <span className="text-yellow-500">Here! :</span>
           </h1>
-          <p className="mt-12 mx-10">
+          <p className="mt-12">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
             assumenda? Repellendus, iste corrupti? Tempore laudantium
             repellendus accusamus accusantium sed architecto odio, nisi expedita

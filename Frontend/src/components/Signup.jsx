@@ -26,7 +26,7 @@ function Signup() {
         setTimeout(() => {
           window.location.href = "/login";
           localStorage.setItem("Users",JSON.stringify(res.data.user))  
-        },2000);
+        },1500);
               }
     }).catch((err) => {
       if(err.response){
